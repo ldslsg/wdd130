@@ -1,0 +1,25 @@
+body {
+    background-color: thistle;
+    margin:0;
+}
+h1{
+    background-color: blanchedalmond;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+#smaller {
+    font-size: 1.3em;
+    /* em = multiplier */
+    background-color: rgb(255, 128, 0);
+    max-width:500px;
+    margin:0 auto;
+}
+.highlight {
+    background-color: rgb(179, 0, 255);
+    color: black;
+}
