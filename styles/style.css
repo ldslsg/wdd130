@@ -48,6 +48,7 @@ header {
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover{
@@ -134,5 +135,11 @@ h2 {
     margin: 0;
 }
 .rivers-card, .camping-card, .rapids-card{
-    
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+main section img {
+    box-sizing: border-box;
 }
