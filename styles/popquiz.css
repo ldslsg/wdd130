@@ -1,0 +1,40 @@
+.pic{
+    width: 400px;
+    height: 470px;
+    grid-column: 1/2;
+}
+
+.card{
+    width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: white;
+    /* margin: 50px; */
+}
+
+.bgp{
+    width: 100%;
+    height: 100%;
+}
+.bgpic{
+    background-image: url("../W11/bgp.jpg");
+    background-size: cover;
+    height: 600px;
+    padding-top: 120px;
+    
+}
+
+body{
+    width: 100%;
+    margin: 0;
+}
+
+.text{
+    grid-column: 2/3;
+    padding: 0 60px 0 60px;
+}
+
+.para{
+    margin-top: 70px;
+}
