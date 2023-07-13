@@ -1,44 +1,199 @@
-
-.main {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #303739;
-  z-index: 1;
-  width:100%;
-}
-
-
-.main:hover .overlay {
-  opacity: 1;
-}
-
-.text {
+body {
+    font-family: 'Noto Sans Korean', 'AppleSDGothicNeo-Regular', 'Malgun Gothic', '맑은 고딕', 'dotum', '돋움', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #666;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+  }
+  
+  .main {
+    position: relative;
+    width: 100%;
+    margin-top: 70px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(48, 55, 57, 0.7);
+    z-index: 1;
+  }
+  
+  .main:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
     color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+  
+  footer {
+    padding-top: 80px;
+    background-color: #431e54;
+    text-align: center;
+  }
+  
+  .contact {
+    padding: 40px 0;
+    background-color: #3e2257;
+  }
+  
+  .foot-info {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: '돋움';
+  }
+  
+  .foot-info p {
+    margin-bottom: 10px;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Seoul-logo img {
+    max-width: 182px;
+  }
+  
+  .pull-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pull-left li {
+    margin-left: 20px;
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .pull-left li a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  .pull-left li a:hover {
+    text-decoration: underline;
+  }
+  
+  .search-cont {
+    position: relative;
+  }
+  
+  .search-element {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-field {
+    position: relative;
+  }
+  
+  .input-field input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    font-size: 13px;
+  }
+  
+  .input-field input:focus {
+    border-color: #0366d6;
+  }
+  
+  .input-search_clear {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-search {
+    margin-left: 10px;
+    background-color: #0366d6;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .search-open-area {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .search-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+  }
+  
+  .btn-close {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
   

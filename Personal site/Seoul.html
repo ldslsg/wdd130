@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서울</title>
-    <link type = "text/css" rel = "stylesheet" href = "../styles/seoul.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서울</title>
+  <link type="text/css" rel="stylesheet" href="../styles/seoul.css">
 </head>
+
 <body>
-    <h2>서울에 방문하신 것을 환영합니다</h2>
-    <header id = "header">
-        <div class="headtop">
-            <div class="container-h">
-                <h1 class = "Seoul-logo">
-                    <img style = "max-width: 182px;" src = "iseoulu.webp" alt = 'iseoulu'>
-                </h1>
-                <li>
-                    <a href = "./restaurants-seoul.html">맛집</a>
-                </li>
-                <li>
-                    <a href = "parks-seoul.html">공원 둘러보기</a>
-                </li>
+  <header id="navigation">
+    <div class="menu-wrap">
+      <div class="pull-left">
+        <h1 class="Seoul-logo">
+          <a href="Seoul.html">
+            <img src="iseoulu.webp" alt='iseoulu'>
+          </a>
+        </h1>
+        <li>
+          <a href="./restaurants-seoul.html">맛집</a>
+        </li>
+        <li>
+          <a href="parks-seoul.html">공원 둘러보기</a>
+        </li>
+        <li>  
+            <a href="https://ldslsg.github.io/wdd130/New%20Personal%20Site%20Project/site-plan.html">Site Plan</a>
+        </li>
+      </div>
+      <div class="pull-right">
+        <div class="search-cont">
+          <form id="searchFrm" name="searchFrm" method="get" action="/search">
+            <div class="search-element">
+              <input type="hidden" id="lang1" value="Korean" name="lang">
+              <div class="input-field">
+                <label for="search_name" class="hd-element">검색 영역 열기</label>
+                <input type="text" id="search_name" name="searchTerm" autocomplete="off" title="검색어를 입력해주세요 search" placeholder="검색어를 입력해주세요 search">
+              </div>
+              <button type="button" class="btn-search" onclick="javascript:goSearch();">
+                <span class="hd-element">검색실행</span>
+              </button>
             </div>
-        </div>
-        <div class = "main">
-            <img src = "seoul.jpg" alt = 'seoul' class = "image">
-            <div class="overlay">
-              <div class="text">Hello Seoul</div>
+          </form>
+          <div class="search-open-area" id="searchOpenArea">
+            <div class="search-close">
+              <button type="button" class="btn-close">
+                <em class="blind">닫기 close</em>
+              </button>
             </div>
           </div>
         </div>
-
-          
-    </header>
-    <footer id = "footer">
-        <div class="contact">
-            <div class = "foot-info">
-                <p class="mb3">
-                    서울 강서구 우현로 19
-                </p>
-                <p>연락정보 (가끔봄)</p>
-                <p>instagram: @yi_seung_gyu</p>
-                <p>전화번호 010-4732-4519</p>
-                <address>COPYRIGHT @ 이승규. ALL RIGHTS RESERVED</address>
-            </div>
-        </div>
-    </footer>
-    <a href="https://ldslsg.github.io/wdd130/New%20Personal%20Site%20Project/site-plan.html">Site Plan</a>
+      </div>
+    </div>
+  </header>
+  <h2>서울에 방문하신 것을 환영합니다</h2>
+  <div class="main">
+    <img src="seoul.jpg" alt='seoul' class="image">
+    <div class="overlay">
+      <div class="text">Hello Seoul</div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="contact">
+      <div class="foot-info">
+        <p class="mb3">
+          서울 강서구 우현로 19
+        </p>
+        <p>연락정보 (가끔봄)</p>
+        <p>instagram: @yi_seung_gyu</p>
+        <p>전화번호 010-4732-4519</p>
+        <address>COPYRIGHT @ 이승규. ALL RIGHTS RESERVED</address>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
