@@ -18,7 +18,7 @@ body {
   }
   
   h1.Seoul-logo a {
-    display: flex;
+    display: grid;
     align-items: center;
     text-decoration: none;
   }
@@ -33,7 +33,7 @@ body {
   }
   
   .content {
-    padding: 20px;
+    padding: 50px;
   }
   
   h2 {
@@ -47,32 +47,60 @@ body {
   .park-info {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 10px;
-    align-items: flex-start;
+    grid-gap: 30px;
     margin-bottom: 30px;
+    align-items: flex-start;
   }
-  
-  .park-info img {
-    max-width: 500px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .park-info .park-text {
-    display: grid;
-    grid-template-rows: auto 1fr;
-  }
-  
+
+
   .park-info h3 {
     font-size: 24px;
     font-weight: bold;
     color: #333;
     margin: 0;
+    grid-column: 1;
+    grid-row: 1 / span 2;
   }
   
   .park-info p {
-    font-size: 16px;
+    font-size: 20px;
     color: #555;
     margin: 0;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .park-info img {
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    grid-column: 2;
+    grid-row: 1/ span 2;
+  }
+
+  .park-info .park-text {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+  
+  footer {
+    background-color: #383838;
+    color: #aaa;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-address {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .footer-contact {
+    font-size: 14px;
   }
   
