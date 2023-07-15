@@ -9,16 +9,49 @@
 </head>
 
 <body>
-  <header>
-    <h1 class="Seoul-logo">
-      <a href="Seoul.html">
-        <img src="iseoulu.webp" alt='iseoulu'>
-      </a>
-      <a href="parks-seoul.html">
-        <img src="park_logo.png" alt='park_logo' class="park_logo">
-      </a>
-    </h1>
-  </header>
+    <header id="navigation">
+        <div class="menu-wrap">
+          <div class="pull-left">
+            <h1 class="Seoul-logo">
+              <a href="Seoul.html">
+                <img src="iseoulu.webp" alt='iseoulu'>
+              </a>
+            </h1>
+            <li>
+              <a href="./restaurants-seoul.html">맛집</a>
+            </li>
+            <li>
+              <a href="parks-seoul.html">공원 둘러보기</a>
+            </li>
+            <li>  
+                <a href="https://ldslsg.github.io/wdd130/New%20Personal%20Site%20Project/site-plan.html">Site Plan</a>
+            </li>
+          </div>
+          <div class="pull-right">
+            <div class="search-cont">
+              <form id="searchFrm" name="searchFrm" method="get" action="/search">
+                <div class="search-element">
+                  <input type="hidden" id="lang1" value="Korean" name="lang">
+                  <div class="input-field">
+                    <label for="search_name" class="hd-element">검색 영역 열기</label>
+                    <input type="text" id="search_name" name="searchTerm" autocomplete="off" title="검색어를 입력해주세요 search" placeholder="검색어를 입력해주세요 search">
+                  </div>
+                  <button type="button" class="btn-search" onclick="javascript:goSearch();">
+                    <span class="hd-element">검색실행</span>
+                  </button>
+                </div>
+              </form>
+              <div class="search-open-area" id="searchOpenArea">
+                <div class="search-close">
+                  <button type="button" class="btn-close">
+                    <em class="blind">닫기 close</em>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
   <div class="content">
     <h2>서울의 아름다운 공원들을 소개합니다!</h2>
